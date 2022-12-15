@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Our Team - Wavy</title>
+    <link rel="shortcut icon" href="./src/img/img scss01.png" type="image/x-icon">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- fontawesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- main  -->
+    <link rel="stylesheet" href="./src/css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bbbootstrap.com/snippets/mega-menu-navigation-bar-icons-71070657">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+
+    <section id="itemDevices">
+        <div class="banner">
+            <div id="productItem" class="main-card">
+                <!-- <div class="card">
+                    <div class="card_above">
+                        <div class="card_top">
+                            <i class="fa-brands fa-apple"></i>
+                            <em>In Stock</em>
+                        </div>
+                        <div class="card-img-top">
+                            <img src="./src/img/img scss1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card_hover">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <div>Airpods Pro</div>
+                                <div class="card_heart"><i class="fa-solid fa-heart"></i></div>
+                            </div>
+                            <p class="card-text">Wireless Noise Cancelling Earphones</p>
+                        </div>
+                        <div class="card_content">
+                            AirPods Pro have been designed to deliver active Noise Cancellation for immersive sound.
+                            Transparancy mode so much can hear your surroundings.
+                        </div>
+                        <div class="card_bottom">
+                            <div class="priceDevices">$ 400</div>
+                            <button>Add <i class="fa-solid fa-angle-right"></i></button>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="nav">
+                <button class="btnCart" onclick="sideNav(1)">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+                <span class="total-qty">0</span>
+            </div>
+            <div onclick="sideNav(0)" class="cover" style="display: none;"></div>
+            <div class="cover purchase-cover"></div>
+            <div class="cart">
+                <div class="side-nav">
+                    <button onclick="sideNav(0)"><i class="fas fa-times"></i></button>
+                    <h2>Cart</h2>
+                    <div class="cart-items">
+                        <span class="empty-cart">Looks Like You Haven't Added Any Product In The Cart</span>
+                    </div>
+                    <div class="final">
+                        <strong>Total: $ <span class="total">0</span></strong>
+                        <div class="action">
+                            <button onclick="buy(1)" class="btn buy">Purchase <i class="fas fa-credit-card"
+                                    style="color:#6665dd;"></i></button>
+                            <button onclick="clearCart()" class="btn clear">Clear Cart <i class="fas fa-trash"
+                                    style="color:#bb342f;"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stock-limit">
+                <em>You Can Only Buy 10 Items For Each Product</em>
+                <button class="btn-ok" onclick="limitPurchase(this)">Okay</button>
+            </div>
+
+            <div class="order-now"></div>
+
+    </section>
+
+
+
+
+
+
+
+    <script src="./src/layout/layout.js"></script>
+    <!-- Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"
+        integrity="sha512-zJYu9ICC+mWF3+dJ4QC34N9RA0OVS1XtPbnf6oXlvGrLGNB8egsEzu/5wgG90I61hOOKvcywoLzwNmPqGAdATA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./src/models/product.js"></script>
+    <script src="./src/services/productService.js"></script>
+    <script src="./src/controllers/main.js"></script>
+
+
+
+</body>
+
+</html>
